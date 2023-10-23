@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- fonte awesome (estrelas do depoimento) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contato</title>
+</head>
+<body>
+    <header style="background-image: url('img/contato.webp')">
+        <div class="container" style="background-color: #96beefb3">
+            <nav>
+                <a href="index.html">
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a> 
+                    <a href="sobreNos.html">Sobre Nós</a> 
+                    <a href="servicos.html">Serviços</a> 
+                    <a href="contato.html" class="btn">Contato</a> 
+                    <div class="close-icon" onclick="closeMenu()">
+                      <i class="fa fa-times-circle"></i>  
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Contato</h1>
+                    <p>Não perca tempo nem dinheiro, para a certeza de um serviço bem realizado entre em contato conosco!</p>
+                </div>
+            </section>
+        </div>
+    </header>
+   <section class="contato">
+        <div class="container">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.303730219162!2d-46.64653502474035!3d-23.557532561451406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b17142405b%3A0xad99fd68214a99c1!2sMotofran%20Express!5e0!3m2!1spt-BR!2sbr!4v1697736956691!5m2!1spt-BR!2sbr" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contato-info">
+                <div class="left-side">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Rua Conselheiro Carrão, 178 2º andar, Bela Vista, São Paulo - SP</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p>motofranexpress@hotmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+55 11 3101-1641</p>
+                    </div><div>
+                        <i class="fa fa-whatsapp"></i>
+                        <p>+55 11 96460-0929</p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <form action="https://formsubmit.co/motofranexpress@hotmail.com" method="post">
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <textarea cols="30" rows="10" name="message" placeholder="Sua mensagem" required></textarea>
+                        <button class="btn" target="_blank">Enviar Mensagem</button>
+                        <input type="hidden" name="_subject" value="Novo Contato, vim do site!">
+                        <input type="text" name="_honey" style="display: none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Muito obrigada! Recebemos a sua mensagem e muito em breve retornaremos o seu contato.">
+                    </form>
+                </div>
+            </div>
+        </div>
+   </section>
+   <footer class="footer">
+    <div class="container">
+        <div class="links">
+          <a href="https://www.facebook.com/MotofranExpress/" target="_blank"> <i class="fa fa-facebook"></i></a>  
+          <a href="https://www.linkedin.com/company/motofran-express" target="_blank"> <i class="fa fa-linkedin"></i></a> 
+          <a href="https://wa.me/message/3EJMNOUTOJU6C1" target="_blank"> <i class="fa fa-whatsapp"></i></a> 
+        </div>
+        <p>Desenvolvido por Aline Oliveira</p>
+    </div>
+</footer>
+    <script src="JS/JavaScript.js"></script>
+</body>
+</html>
