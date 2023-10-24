@@ -233,7 +233,6 @@ nav .close-icon{
 .sobre .sobre-text p{
    margin: 18px 0px;
    color: #000000a6;
-   text-align: justify;
 }
 .sobre .sobre-img{
     width: 50%;
@@ -452,6 +451,9 @@ nav .close-icon{
     }
     .sobre .sobre-text{
         margin-top: 40px;
+    }
+    .sobre .sobre-text h3{
+        font-size: 25px;
     }
     /*Pagina contato responsivo*/
 
