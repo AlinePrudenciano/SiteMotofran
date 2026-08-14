@@ -104,4 +104,52 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Contact form AJAX submit
+  const contactForm = document.getElementById('contactForm');
+  const contactBtn = document.getElementById('contactBtn');
+
+  if (contactForm && contactBtn) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Disable button and show sending state
+      contactBtn.disabled = true;
+      contactBtn.textContent = 'Enviando...';
+
+      const formData = new FormData(contactForm);
+
+      fetch('https://formsubmit.co/ajax/motofranexpress@hotmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          contactBtn.textContent = 'Enviado!';
+          contactBtn.style.backgroundColor = '#25d366';
+          contactForm.reset();
+
+          // Reset button after 4 seconds
+          setTimeout(() => {
+            contactBtn.disabled = false;
+            contactBtn.textContent = 'Enviar mensagem';
+            contactBtn.style.backgroundColor = '';
+          }, 4000);
+        } else {
+          throw new Error('Erro no envio');
+        }
+      })
+      .catch(() => {
+        contactBtn.textContent = 'Erro. Tente novamente.';
+        contactBtn.style.backgroundColor = '#e53e3e';
+
+        setTimeout(() => {
+          contactBtn.disabled = false;
+          contactBtn.textContent = 'Enviar mensagem';
+          contactBtn.style.backgroundColor = '';
+        }, 3000);
+      });
+    });
+  }
 });

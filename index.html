@@ -275,14 +275,14 @@
         </div>
 
         <!-- Contact Form -->
-        <form class="contact-form" action="https://formsubmit.co/motofranexpress@hotmail.com" method="POST">
+        <form class="contact-form" id="contactForm">
           <input type="hidden" name="_subject" value="Nova mensagem do site MotoFran">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="nome" class="contact-form__input" placeholder="Seu nome" required>
           <input type="email" name="email" class="contact-form__input" placeholder="Seu e-mail" required>
           <input type="tel" name="telefone" class="contact-form__input" placeholder="Seu telefone (WhatsApp)">
           <textarea name="mensagem" class="contact-form__textarea" placeholder="O que você precisa? (tipo de entrega, origem, destino...)" required></textarea>
-          <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Enviar mensagem</button>
+          <button type="submit" id="contactBtn" class="btn btn--primary btn--large" style="width: 100%;">Enviar mensagem</button>
         </form>
       </div>
     </div>
